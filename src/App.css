@@ -24,7 +24,50 @@ body {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  color: white;
+  font-family: "Staatliches", sans-serif;
+  font-size: 100px;
+  position: relative;
+  top: 100px;
+  margin-bottom: 150px; 
+}
+
+.main-text p{
+  margin: 0px;
+}
+
+.small-text{
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.shop-button{
+  color: white;
+  font-family: "Staatliches", sans-serif;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 20px 30px;
+  font-size: 30px;
+}
+
+.shop-button:hover{
+  color: #e92227;
+  border: 1px solid #e92227;
+  cursor: pointer;
+}
+
+.hero-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
+    min-height: 80vh; 
 }
