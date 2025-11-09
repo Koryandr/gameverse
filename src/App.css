@@ -7,6 +7,7 @@ html, body, #root {
 
 body {
   background: linear-gradient(to right, #2c3055, #1c1c34);
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -67,7 +68,36 @@ body {
 
 .hero-section {
     display: flex;
-    justify-content: space-between; 
     align-items: center;
-    min-height: 80vh; 
+}
+
+.content-container{
+  margin-left: 150px;
+}
+
+.games-text{
+  font-family: "Staatliches", sans-serif;
+  font-size: 35px;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  border: 1px solid white;
+  background-color: white;
+  
+  /* Убираем собственный горизонтальный паддинг */
+  padding: 10px 0; 
+  
+  /* --- МАГИЯ VW (ПОЛНАЯ ШИРИНА ЭКРАНА) --- */
+  
+  /* Устанавливает ширину, равную ширине всего окна просмотра */
+  width: 100vw; 
+  
+  /* Сдвигает элемент влево на половину ширины экрана (50%) 
+     и обратно на половину его собственной ширины (-50vw). 
+     Это эффективно выравнивает левый край элемента с левым краем окна. */
+  margin-left: calc(50% - 50vw);
 }

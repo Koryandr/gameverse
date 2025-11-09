@@ -2,7 +2,7 @@ const Header = () => {
     return(
         <div>
             <div className="nav">
-            <img src="Gemini_Generated_Image_fhdy3rfhdy3rfhdy2.png" height={90}/>
+            <img src="Gemini_Generated_Image_fhdy3rfhdy3rfhdy2.png" height={110}/>
                 <div className="navbar">
                     <p>HOME</p>
                     <p>GAME</p>
