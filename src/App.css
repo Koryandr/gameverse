@@ -58,6 +58,7 @@ body {
   border-radius: 25px;
   padding: 20px 30px;
   font-size: 30px;
+  transition: color 0.2s ease-in-out;
 }
 
 .shop-button:hover{

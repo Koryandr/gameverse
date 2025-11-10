@@ -29,6 +29,7 @@
 }
 
 .column__view-more:hover {
-    color: #ff7f7f; /* Светлее красный при наведении */
-    border: 1px solid #ff7f7f;
+    color: white; /* Светлее красный при наведении */
+    border: 1px solid red;
+    background-color: red;
 }
