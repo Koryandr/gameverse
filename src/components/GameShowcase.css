@@ -5,7 +5,7 @@
     grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
     gap: 30px; /* Промежуток между колонками */
 
-    background-color: #212121; /* Очень темно-серый фон */
+    background-color: white; /* Очень темно-серый фон */
     padding: 30px 40px; /* Внутренние отступы всего контейнера */
     color: #f0f0f0; /* Почти белый цвет текста */
     font-family: 'Roboto', sans-serif; /* Похожий на оригинал шрифт */

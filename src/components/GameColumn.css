@@ -14,17 +14,21 @@
     font-size: 1.1em; /* Размер заголовка */
     font-weight: 700; /* Более жирный */
     letter-spacing: 0.5px; /* Немного разряженный текст */
-    color: #e0e0e0;
+    color: #2c3055;
 }
 
 .column__view-more {
-    color: #ff4d4d; /* Красный цвет, как в оригинале */
+    color: red; /* Красный цвет, как в оригинале */
     text-decoration: none; /* Убираем подчеркивание */
     font-size: 0.85em; /* Меньший размер */
     font-weight: 500;
     transition: color 0.2s ease-in-out; /* Плавное изменение цвета при наведении */
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 25px;
 }
 
 .column__view-more:hover {
     color: #ff7f7f; /* Светлее красный при наведении */
+    border: 1px solid #ff7f7f;
 }
