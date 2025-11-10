@@ -65,6 +65,7 @@ body {
   color: #e92227;
   border: 1px solid #e92227;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hero-section {
