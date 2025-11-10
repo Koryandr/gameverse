@@ -77,21 +77,16 @@ body {
 
 .games-text{
   font-family: "Staatliches", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .main-nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
   border: 1px solid white;
   background-color: white;
-  
-  /* Убираем собственный горизонтальный паддинг */
-  padding: 10px 0; 
-  
-  /* --- МАГИЯ VW (ПОЛНАЯ ШИРИНА ЭКРАНА) --- */
   
   /* Устанавливает ширину, равную ширине всего окна просмотра */
   width: 100vw; 

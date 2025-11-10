@@ -1,0 +1,30 @@
+/* src/components/GameColumn.css */
+
+.column__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-bottom: 12px; /* Отступ до разделителя */
+    border-bottom: 2px solid #333; /* Более заметный разделитель */
+    margin-bottom: 20px; /* Отступ после разделителя */
+}
+
+.column__title {
+    font-size: 1.1em; /* Размер заголовка */
+    font-weight: 700; /* Более жирный */
+    letter-spacing: 0.5px; /* Немного разряженный текст */
+    color: #e0e0e0;
+}
+
+.column__view-more {
+    color: #ff4d4d; /* Красный цвет, как в оригинале */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 0.85em; /* Меньший размер */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out; /* Плавное изменение цвета при наведении */
+}
+
+.column__view-more:hover {
+    color: #ff7f7f; /* Светлее красный при наведении */
+}

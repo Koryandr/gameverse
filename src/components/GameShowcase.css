@@ -1,0 +1,26 @@
+/* src/components/GameShowcase.css */
+
+.game-showcase-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    gap: 30px; /* Промежуток между колонками */
+
+    background-color: #212121; /* Очень темно-серый фон */
+    padding: 30px 40px; /* Внутренние отступы всего контейнера */
+    color: #f0f0f0; /* Почти белый цвет текста */
+    font-family: 'Roboto', sans-serif; /* Похожий на оригинал шрифт */
+    max-width: 1200px; /* Ограничение по ширине */
+    margin: 50px auto; /* Центрирование и отступ сверху/снизу */
+    border-radius: 8px; /* Немного закругленные углы контейнера */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Легкая тень для глубины */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .game-showcase-container {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+        gap: 40px; /* Больший вертикальный промежуток */
+        padding: 20px;
+        margin: 20px; /* Отступы от краев экрана */
+    }
+}

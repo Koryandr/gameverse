@@ -1,0 +1,42 @@
+/* src/components/GameCard.css */
+
+.game-card {
+    display: flex; /* Flexbox для изображения и текста */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 18px; /* Отступ между карточками */
+}
+
+.game-card__image {
+    width: 60px; /* Точный размер ширины изображения */
+    height: 85px; /* Точный размер высоты изображения */
+    object-fit: cover; /* Изображение будет обрезать, чтобы поместиться */
+    margin-right: 15px; /* Отступ справа от изображения */
+    border-radius: 4px; /* Немного закругленные углы у изображений */
+}
+
+.game-card__info {
+    display: flex;
+    flex-direction: column; /* Текст располагается вертикально */
+    justify-content: center;
+    flex-grow: 1; /* Позволяет блоку занимать все доступное пространство */
+}
+
+.game-card__title {
+    font-size: 0.9em; /* Размер названия игры */
+    font-weight: 500; /* Средняя жирность */
+    color: #f0f0f0; /* Цвет названия */
+    margin-bottom: 3px; /* Отступ между названием и статусом/ценой */
+    line-height: 1.2; /* Межстрочный интервал */
+}
+
+.game-card__status {
+    font-size: 0.8em; /* Размер статуса/цены */
+    color: #b0b0b0; /* Светло-серый для обычной цены */
+    font-weight: 400;
+}
+
+/* Специальный стиль для 'Free' и 'Coming Soon' */
+.game-card__status.highlight {
+    color: #ff4d4d; /* Красный, как в оригинале */
+    font-weight: 500;
+}
