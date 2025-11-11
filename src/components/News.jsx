@@ -1,5 +1,5 @@
 import React from "react";
-import { Search } from "lucide-react"; // ✅ добавь эту строку
+import { Search } from "lucide-react";
 import "./News.css";
 
 const News = () => {
