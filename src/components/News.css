@@ -1,0 +1,90 @@
+.news-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  border: 1px solid white;
+  background-color: white;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+/* Контейнер для заголовка и поиска */
+.navbar-news {
+  display: flex;
+  justify-content: space-between; /* разделяет "News" и поиск по краям */
+  align-items: center;
+  width: 80%; /* ограничиваем ширину блока */
+  margin: 60px auto 0; /* центрируем по горизонтали и добавляем отступ сверху */
+}
+
+/* Заголовок */
+.news-main {
+  color: white;
+  font-family: "Staatliches", sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Поиск */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 4px 0;
+  width: 250px;
+  background-color: transparent;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-icon {
+  color: white;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  pointer-events: none;
+}
+
+.new-game {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 1px;
+}
+
+/* Рамка только вокруг картинок */
+.new-game img {
+  border: 1px solid #5b8c2d;
+  border-radius: 5px; /* необязательно, но выглядит аккуратнее */
+  width: 250px; /* при необходимости задай одинаковый размер */
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+/* Немного анимации при наведении — чисто для красоты */
+.new-game img:hover {
+  transform: scale(1.03);
+}
+
+.tournaments{
+  color: white;
+  font-family: "Staatliches", sans-serif;
+  font-size: 40px;
+  margin-left: 160px;
+  margin-top: 100px;
+}
+
