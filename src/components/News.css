@@ -9,16 +9,14 @@
   margin-left: calc(50% - 50vw);
 }
 
-/* Контейнер для заголовка и поиска */
 .navbar-news {
   display: flex;
-  justify-content: space-between; /* разделяет "News" и поиск по краям */
+  justify-content: space-between;
   align-items: center;
-  width: 80%; /* ограничиваем ширину блока */
-  margin: 60px auto 0; /* центрируем по горизонтали и добавляем отступ сверху */
+  width: 80%;
+  margin: 60px auto 0;
 }
 
-/* Заголовок */
 .news-main {
   color: white;
   font-family: "Staatliches", sans-serif;
@@ -26,7 +24,6 @@
   margin: 0;
 }
 
-/* Поиск */
 .search-bar {
   display: flex;
   align-items: center;
@@ -60,27 +57,24 @@
 .new-game {
   align-items: center;
   display: flex;
-  gap: 30px;
+  gap: 60px;
   justify-content: center;
   margin-top: 10px;
   padding: 10px 1px;
 }
 
-/* Рамка только вокруг картинок */
 .new-game img {
   border: 1px solid #5b8c2d;
-  border-radius: 5px; /* необязательно, но выглядит аккуратнее */
-  width: 250px; /* при необходимости задай одинаковый размер */
-  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
   transition: transform 0.2s ease;
 }
 
-/* Немного анимации при наведении — чисто для красоты */
 .new-game img:hover {
   transform: scale(1.03);
 }
 
-.tournaments{
+.tournaments {
   color: white;
   font-family: "Staatliches", sans-serif;
   font-size: 40px;
@@ -88,3 +82,46 @@
   margin-top: 100px;
 }
 
+.Tournaments-news {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Карточка с турниром */
+.tournament-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tournament-card img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tournament-card:hover {
+  transform: scale(1.03);
+}
+
+.light-button {
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.light-button img {
+  transition: transform 0.2s ease;
+}
+
+/* Эффект при наведении */
+.light-button:hover img {
+  transform: scale(1.1);
+}
