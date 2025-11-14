@@ -14,7 +14,7 @@ const Header = () => {
             <div className="hero-section"> 
                 <div className="content-container"> 
                     <div className="main-text">
-                        <p>SPIDERMAN</p>
+                        <p>SUPERHERO</p>
                         <p>GAME-SHOP</p>
                     </div>
                     <div className="small-text">
