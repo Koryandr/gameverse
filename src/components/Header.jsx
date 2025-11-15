@@ -1,4 +1,22 @@
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
 const Header = () => {
+
+    const [ref, inView] = useInView({
+        threshold: 0.2, // 20% элемента должно быть видно
+        triggerOnce: true, // анимация запускается только один раз
+    });
+
+    const variants = {
+        hidden: { opacity: 0, y: 50 },   // изначальное состояние
+            visible: { 
+                opacity: 1, 
+                y: 0, 
+                transition: { duration: 0.6 }  // длительность анимации
+        },
+    };
+
     return(
         <div>
             <div className="nav">
@@ -22,8 +40,14 @@ const Header = () => {
                     </div>
                     <button className="shop-button">START SHOPPING</button>
                 </div>
-
+            <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            >
                 <img src="17626047240802.png" className="hero-image" width={800}/>
+            </motion.div>
             </div> 
         </div>
     )
