@@ -46,7 +46,7 @@
 
 .best-games {
     display: flex;
-    gap: 15px;
+    gap: 50px;
     align-items: center;
 }
 
